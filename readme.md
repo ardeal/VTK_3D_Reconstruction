@@ -29,8 +29,13 @@ vtkDICOMParser-9.0d.lib
 vtkRenderingCore-9.0d.lib  
 
 # Misc
++ The example uses MarchingCubes for 3D reconstuction.
 + Be sure to set build INSTALL when you build VTK.
 + Be sure to set CMAKE_INSTALL_PREFIX on cmake to make sure all headers and libs could be collected to the set folder.
++ If you 3D figure doesn't look good, try to change the parameter 100 on line 62 to some other value.
+```C
+skinExtractor->SetValue(0, 100);
+```
 
 
 
